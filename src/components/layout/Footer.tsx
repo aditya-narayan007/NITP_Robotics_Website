@@ -131,7 +131,7 @@ export function Footer() {
             © {new Date().getFullYear()} Robotics Club, NIT Patna. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/60">
-            Built with passion by Pranav!
+            {import.meta.env.VITE_BUILTTEXT}
           </p>
         </div>
       </div>

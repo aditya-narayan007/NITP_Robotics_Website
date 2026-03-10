@@ -1,9 +1,33 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Award, Trophy } from 'lucide-react';
 import { getAwards, getAwardStats, getAwardCategories, getAwardYears, getAwardsByYear, resolveIcon } from '@/data';
+
+function AnimatedCounter({ value }: { value: string }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const [count, setCount] = useState(0);
+  const numeric = parseInt(value);
+  const suffix = value.replace(String(numeric), '');
+
+  useEffect(() => {
+    if (!isInView) return;
+    let start = 0;
+    const duration = 2000;
+    const step = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * numeric));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [isInView, numeric]);
+
+  return <span ref={ref}>{count}{suffix}</span>;
+}
 
 export function AwardsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -68,11 +92,12 @@ export function AwardsPage() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                    className="glass rounded-2xl p-6"
+                    className="glass rounded-2xl px-6 pt-10 pb-8 text-center"
                   >
-                    <Icon className="w-6 h-6 text-primary mb-2 mx-auto" />
-                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</div>
+                    <div className="font-heading text-4xl sm:text-5xl font-bold text-primary mb-3">
+                      <AnimatedCounter value={stat.value} />
+                    </div>
+                    <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">{stat.label}</div>
                   </motion.div>
                 );
               })}

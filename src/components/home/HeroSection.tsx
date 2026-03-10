@@ -48,7 +48,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="inline-flex items-center gap-2.5 glass rounded-full px-5 py-2 mb-10"
+            className="inline-flex items-center gap-2.5 glass rounded-full px-5 py-2 mb-16"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -91,21 +91,21 @@ export function HeroSection() {
           </motion.h1>
 
           {/* Subheadline */}
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed"
           >
             The Robotics Club at NIT Patna builds autonomous systems, AI solutions, and next-generation hardware — pushing what's possible in Indian engineering.
-          </motion.p>
+          </motion.p> */}
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="pt-20 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link to="/projects">
               <Button size="lg" className="px-8 py-3.5 text-base font-semibold rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 group">
