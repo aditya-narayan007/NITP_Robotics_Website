@@ -14,7 +14,6 @@ import type {
   AwardStats,
   AwardGalleryImage,
   GalleryImage,
-  Achievement,
   Milestone,
   Testimonial,
   Metric,
@@ -30,7 +29,6 @@ export type {
   AwardStats,
   AwardGalleryImage,
   GalleryImage,
-  Achievement,
   Milestone,
   Testimonial,
   Metric,
@@ -174,13 +172,8 @@ export function getGalleryCategories(): string[] {
 }
 
 // ============================================
-// ABOUT (achievements, milestones, testimonials, metrics)
+// ABOUT (milestones, testimonials, metrics)
 // ============================================
-
-/** Recent achievements shown on About page */
-export function getAchievements(): Achievement[] {
-  return aboutData.achievements as Achievement[];
-}
 
 /** Club milestones / timeline */
 export function getMilestones(): Milestone[] {

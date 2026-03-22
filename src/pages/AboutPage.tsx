@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Users, Rocket, Heart } from 'lucide-react';
 import { useRef } from 'react';
-import { getAchievements, getMilestones, resolveIcon } from '@/data';
+import { getAwards, getMilestones, resolveIcon } from '@/data';
 
 const values = [
   {
@@ -36,7 +36,7 @@ const values = [
 ];
 
 export function AboutPage() {
-  const achievements = getAchievements();
+  const achievements = getAwards().slice(0, 6);
   const milestones = getMilestones();
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -94,7 +94,7 @@ export function AboutPage() {
             >
               {[
                 { label: 'Members', value: '50+' },
-                { label: 'Projects', value: '40+' },
+                { label: 'Projects', value: '45+' },
                 { label: 'Awards', value: '15+' },
                 { label: 'Years', value: '10+' },
               ].map((stat, index) => (

@@ -115,14 +115,6 @@ export interface GalleryImage {
   title: string;
 }
 
-export interface Achievement {
-  year: string;
-  title: string;
-  category: string;
-  /** Icon name from lucide-react */
-  icon: string;
-}
-
 export interface Milestone {
   year: string;
   event: string;
