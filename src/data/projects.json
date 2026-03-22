@@ -6,8 +6,8 @@
     "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&auto=format&fit=crop",
     "category": "Autonomous",
     "tags": ["AI", "Computer Vision", "ROS", "Python"],
-    "github": "#",
-    "demo": "#",
+    "github": "",
+    "demo": "abc.com",
     "status": "Completed",
     "featured": true
   },
@@ -19,7 +19,7 @@
     "category": "Robotics",
     "tags": ["Machine Learning", "Control Systems", "Arduino"],
     "github": "#",
-    "demo": "#",
+    "demo": "abc.com",
     "status": "Completed",
     "featured": false
   },

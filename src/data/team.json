@@ -1,28 +1,27 @@
 {
   "pi": {
-    "name": "Dr. Rajesh Kumar",
+    "name": "Dr. Anupam Kumar",
     "role": "Professor In-charge",
-    "department": "Department of Electrical Engineering",
-    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop",
-    "bio": "Leading research in robotics and automation with 15+ years of experience",
-    "email": "rajesh.kumar@nitp.ac.in",
+    "department": "Dept of Electronics and Communication Engineering",
+    "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774150737/Screenshot_2026-03-22_at_9.08.46_AM_hhcalj.png",
+    "bio": "Leading research in robotics and automation with experience",
+    "email": "Anupam.ec@nitp.ac.in",
     "social": {
-      "linkedin": "#",
-      "twitter": "#"
+      "linkedin": "https://www.linkedin.com/in/dr-anupam-kumar-67435037"
     }
   },
   "executives": [
     {
-      "name": "Arjun Sharma",
+      "name": "Pranav",
       "role": "President",
-      "year": "Final Year, CSE",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop",
+      "year": "Pre-Final Year, CSE",
+      "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774151486/Selfie_vb6ari.jpg",
       "bio": "Leading the club with a vision for innovation",
-      "email": "arjun@student.nitp.ac.in",
+      "email": "pranavk@nitp.ac.in",
       "social": {
-        "github": "#",
-        "linkedin": "#",
-        "twitter": "#"
+        "github": "https://github.com/lifeispranav",
+        "linkedin": "https://www.linkedin.com/in/lifeispranav",
+        "twitter": ""
       }
     },
     {
@@ -35,7 +34,7 @@
       "social": {
         "github": "#",
         "linkedin": "#",
-        "twitter": "#"
+        "twitter": ""
       }
     },
     {
