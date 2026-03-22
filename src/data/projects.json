@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 9,
     "title": "Automated Bot",
     "description": "A wall-following autonomous bot that maintains distance, detects parcel boxes, counts laps via IR strip sensing, and displays stats on an LCD.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154151/f8737e5f7ea0b3cdb58a59397304c93389299353-1244x913_gifg5x.png",
@@ -12,7 +12,7 @@
     "featured": true
   },
   {
-    "id": 2,
+    "id": 8,
     "title": "Mark 1.6",
     "description": "A fully wireless Bluetooth-controlled robotic arm mounted on a 4WD chassis, built with 3D-printed components and NRF communication modules.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154150/m_ztupeq.png",
@@ -24,7 +24,7 @@
     "featured": true
   },
   {
-    "id": 3,
+    "id": 7,
     "title": "Line Follower Bot",
     "description": "A mobile robot that detects and follows floor tracks using IR sensors, onboard processing, and motor driver control for autonomous path following.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154145/da6f5fa1e22bfee348b662e1b658016b549fcb76-547x378_begghr.png",
@@ -36,7 +36,7 @@
     "featured": true
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "PlutoX",
     "description": "An open-source nano drone with Wi-Fi camera support, manual app control, and ROS-based scripting for computer-vision and automation workflows.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154152/77df4fa77f001a804841728f39f7e6cba89abd20-1260x945_hvxs0a.png",
@@ -60,7 +60,7 @@
     "featured": false
   },
   {
-    "id": 6,
+    "id": 4,
     "title": "Self Balancing Bot",
     "description": "An inverted-pendulum robot that stays upright by driving its wheels in the direction of tilt using MPU6050 sensor feedback and control logic.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154150/sbb_poflu7.png",
@@ -72,7 +72,7 @@
     "featured": false
   },
   {
-    "id": 7,
+    "id": 3,
     "title": "Radar Navigation",
     "description": "A marine-navigation study project focused on radar-based vessel detection, tracking, and positioning using X-band and S-band systems.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154148/bf6334e40844220de62271a513618eeb5a0acdfd-1251x675_vf5rtw.png",
@@ -84,7 +84,7 @@
     "featured": false
   },
   {
-    "id": 8,
+    "id": 2,
     "title": "Hexapod",
     "description": "A six-legged robotic platform designed for stable multi-axis motion using Arduino Nano, SG90 servos, PCA9685 driver, and 3D-printed parts.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154150/98692b60938c57c401b5b5523fc753da476d5ca5-1225x705_znzddw.png",
@@ -96,7 +96,7 @@
     "featured": false
   },
   {
-    "id": 9,
+    "id": 1,
     "title": "Air Quality Monitoring Drone",
     "description": "A manually controlled drone that captures atmospheric gas data via MQ2 and uploads telemetry to Firebase using ESP8266 for remote monitoring.",
     "image": "https://res.cloudinary.com/dij1hpcld/image/upload/v1774154152/5ab92834a52e63a1a0270e9e23d9e904bb308e01-1060x515_yfp3bg.png",
